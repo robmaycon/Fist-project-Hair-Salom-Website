@@ -1,4 +1,4 @@
-body {
+.body {
 
 	font-family: 'Montserrat', sans-serif;
 
@@ -251,14 +251,14 @@ select {
 
 .enviar {
 
-	width: 25%;
+	width: 50%;
 	padding: 15px 0;
 	background: orange;
 	color: white;
 	font-weight: bold;
 	border: none;
 	border-radius: 5px;
-	font-size: 18px;
+	font-size: 16px;
 	transition: 1s all;
 	cursor: pointer;
 }
@@ -269,11 +269,13 @@ select {
 
 }
 
+.corpo {
+	display: flex;
+	justify-content: flex-start;
+}
+
 table {
-	margin: 20px 0 40px;
-	position: absolute;
-	top: 520px;
-	left: 70%;
+	margin: 20px 20px;
 }
 
 
@@ -331,46 +333,18 @@ footer {
 		width: 70%;
 		margin-bottom: 10px;
 	}
-	table {
-		position: static;
-		margin: 5px auto;
+	.corpo {
+		display: flex;
+		flex-direction: column;
+	}
+	.enviar {
+		width: 100%;
 	}
 	.produtos, .produtos li {
 		display: flex;
 		flex-direction: column;
 		width: 80%;
 		margin-bottom: 10px;
-	}
-    /*h1 {
-        text-align: center;
-    }
-
-    nav {
-        position: static;
-    }
-    form {
-    	margin-left: 20px;
-    }
-    
-    td, th {
-
-	padding: 15px 30px;	
-
-	}
-
-	.produtos li {
-		width: 80%;
-		margin: 0px 0px 20px 40px;
-	}
-    .input-padrao {
-
-    	font-size: 15px;
-    }
-    .enviar {
-
-    	font-size: 14px;
-    	width: 80%
-    }
-   
+	} 
     
 }
